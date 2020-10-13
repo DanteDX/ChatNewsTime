@@ -1,0 +1,97 @@
+body{
+    background-color:black;
+    color:white;
+}
+
+.heading{
+    text-align:center;
+}
+
+.heading h3{
+    text-decoration:underline;
+    margin:0px;
+}
+
+.heading h5{
+    margin:0px;
+}
+
+.contents{
+    display:grid;
+    grid-template-columns: auto 400px;
+    column-gap: 10px;
+}
+
+.content{
+    border:1px solid white;
+}
+
+.news-contents-each{
+    padding:10px;
+    box-shadow: 1px 1px 1px 1px whitesmoke;
+}
+
+.news-contents-each:hover{
+    padding:10px;
+    box-shadow: 1px 1px 1px 1px whitesmoke;
+    position:relative;
+    top:3px;
+    left:1px;
+    border-radius:20px;
+}
+
+.chat-contents{
+    position:relative;
+}
+
+::placeholder {
+    color: white;
+  }
+
+.chat-contents form{
+    position:absolute;
+    right:0px;
+    top:0px;
+    left:0px;
+}
+
+.chat-contents .chats{
+    position:absolute;
+    right:0px;
+    top:150px;
+    left:0px;
+    border:1px solid white;
+    padding:5px;
+    margin:5px;
+}
+
+.chat-each{
+    padding:3px;
+    border:1px solid white;
+    margin:4px;
+    margin-left:0px;
+}
+
+.chat-each p{
+    margin:0px;
+}
+
+form input,textarea{
+    background-color:#7f6c6c;
+    padding:5px;
+    border:1px solid black;
+    margin:3px;
+    border-radius:10px;
+    color:white;
+}
+
+.chats .chat-heading{
+    text-align:center;
+    text-decoration:underline;
+    margin:1px;
+}
+
+
+
+
+

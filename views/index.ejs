@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ChatTime</title>
+        <link rel="stylesheet" href="./index.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js"></script>
+        <script src="./index.js"></script>
+    </head>
+
+    <body>
+        <div class="heading">
+            <h3>Welcome to ChatTime</h3>
+            <h5>A place where you can chat and read news</h5>
+        </div>
+
+        <div class="contents">
+            <div class="news-contents content">
+                <!-- news-content-each -->
+            </div>
+            <div class="chat-contents content">
+                <form>
+                    <input type="text" id="username" name="username" placeholder="type a username" />
+                    <br />
+                    <textarea  id="message" name="message" placeholder="type your message" rows="4" cols="30"></textarea>
+                    <br />
+                    <input type="submit"  value="Send" />
+                </form>
+                <div class="chats">
+                    <p class="chat-heading">Your Chats</p>
+                    <!-- .chat-each-->
+                </div>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>
