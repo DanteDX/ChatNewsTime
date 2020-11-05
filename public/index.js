@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     const newsContents = document.querySelector('.news-contents');
     const getNews = async () => {
         try{
-            const response = await fetch('http://newsapi.org/v2/everything?q=bitcoin&from=2020-09-13&sortBy=publishedAt&apiKey=3373e35ea37143c6b478c8fb5e90ce43');
+            const response = await fetch('http://newsapi.org/v2/everything?q=xiaomi&from=2020-11-01&sortBy=publishedAt&apiKey=3373e35ea37143c6b478c8fb5e90ce43');
             const data = response.json();
             return data;
         }catch(err){
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             const div = document.createElement('div');
             div.className = 'news-contents-each';
             const h3 = document.createElement('h3');
-            h3.textContent = article.author;
+            h3.textContent = article.title;
             const p = document.createElement('p');
             p.textContent = article.description;
             div.appendChild(h3);
